@@ -1,0 +1,59 @@
+/* Blue links */
+a:link {color: #0054b0;}
+a:visited {color: #0054b0;}
+
+/* White navbar */
+.navbar {background-color: #184c9c;}
+
+/* Half opaque splash image */
+.carousel-item img {opacity: 0.35;
+                    min-height: 480px;}
+
+.carousel{
+  width:100%;
+  min-height: 480px !important;
+  max-height: 700px !important;
+  overflow:hidden;
+}
+
+.carousel-caption {
+    top: 20%;
+    transform: translateY(-0%);
+    bottom: initial;
+}
+
+.carousel-item {-webkit-transform-style: preserve-3d;
+                -moz-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+               }
+
+/* Blue navbar items */
+.nav-item .nav-link {font-weight: 550;}
+.nav-item.active .nav-link:link {color: #efb614}
+.nav-item.active .nav-link:visited {color: #efb614}
+.nav-item .nav-link:link {color: #ffffff;}
+.nav-item .nav-link:visited {color: #ffffff;}
+*/
+.carousel-caption h1 {font-weight: 700;}
+/* Carousel captions are blue*/
+.carousel-caption h1, h2, h3, h4, h5{color: #184c9c;}
+
+
+/* Highlight paragraphs */
+p.highlight {color: #0054b0;
+             font-weight: 700;
+             margin-top: 1rem;
+             margin-bottom: 0.25rem;}
+
+.mt-5 {color: #184c9c;}
+
+/* White on blue headline */
+.jumbotron {background-color: #ffd123;
+            color: #ffffff;
+            text-align: center;}
+
+/* Grey footer */
+footer.footer {background-color: #f5f5f5;}
+
+
+
