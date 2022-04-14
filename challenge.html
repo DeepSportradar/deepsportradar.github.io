@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <title>Challenges</title>
   </head>
   <body>
@@ -75,15 +77,51 @@
         <h1 class="mt-5"> <img class="mr-4"src="img/triangle.png" width="32" height="32" alt="">Challenges</h1>
         <p style="text-align: justify;">
           This year, MMSports proposes a competition where participants will compete over State-Of-The-Art problems applied to real-world sport specific data.
-          The competition is made of 4 individual challenges, each of which is sponsored by Sportradar with a US$1,000.00 prize.
-          Each challenge comes with a toolkit describing the task, the dataset and metrics on which participants will be evaluated:
+          The competition is made of 4 individual challenges, each of which is sponsored by Sportradar with a $1,000 prize.
+          Each challenge comes with a toolkit describing the task, the dataset and metrics on which participants will be evaluated.
         </p>
-        <ul>
+        <div style="padding-bottom:20px"><table style="width:100%">
+          <tr>
+            <td><div style="margin:5px; padding:10px; text-align: center; border:1px solid darkgray; border-radius: 5px; background-color: antiquewhite; box-shadow: 4px 4px gray">
+              <p>Ball 3D localization</p>
+              <div><img src="https://arena-data.keemotion.com/tmp/gva/DeepSportRadarReidFigure.png" width="200"></div>
+                <a href="https://github.com/DeepSportRadar/ball-3d-localization-challenge"><i class="fa fa-github"></i> Challenge toolkit</a><br/>
+                <a href="https://eval.ai/web/challenges/challenge-page/1688"><img src="https://eval.ai/dist/images/evalai-logo-single.png" height="15px" style="padding-bottom: 2px"> Challenge submissions</a><br/>
+              </p>
+              <p style="text-align: center; font-size: small;">Organizer: <a href = "mailto: g.vanzandycke@sportradar.com">Gabriel Van Zandycke</a></p>
+            </div></td>
+            <td><div style="margin:5px; padding:10px; text-align: center; border:1px solid darkgray; border-radius: 5px; background-color: antiquewhite; box-shadow: 4px 4px gray">
+              <p>Camera calibration</p>
+              <div><img src="https://arena-data.keemotion.com/tmp/gva/DeepSportRadarReidFigure.png" width="200"></div>
+                <a href="https://github.com/DeepSportRadar/camera-calibration-challenge"><i class="fa fa-github"></i> Challenge toolkit</a><br/>
+                <a href="https://eval.ai/web/challenges/challenge-page/1687/overview"><img src="https://eval.ai/dist/images/evalai-logo-single.png" height="15px" style="padding-bottom: 2px"> Challenge submissions</a><br/>
+              </p>
+              <p style="text-align: center; font-size: small;">Organizer: <a href = "mailto: d.zambrano@sportradar.com">Davide Zambrano</a></p>
+            </div></td>
+            <td><div style="margin:5px; padding:10px; text-align: center; border:1px solid darkgray; border-radius: 5px; background-color: antiquewhite; box-shadow: 4px 4px gray">
+              <p>Instance segmentation</p>
+              <div><img src="https://arena-data.keemotion.com/tmp/gva/DeepSportRadarReidFigure.png" width="200"></div>
+                <a href="https://github.com/DeepSportRadar/instance-segmentation-challenge"><i class="fa fa-github"></i> Challenge toolkit</a><br/>
+                <a href="https://eval.ai/web/challenges/challenge-page/1685"><img src="https://eval.ai/dist/images/evalai-logo-single.png" height="15px" style="padding-bottom: 2px"> Challenge submissions</a><br/>
+              </p>
+              <p style="text-align: center; font-size: small;">Organizer: <a href = "mailto: m.istasse@sportradar.com">Maxime Istasse</a></p>
+            </div></td>
+            <td><div style="margin:5px; padding:10px; text-align: center; border:1px solid darkgray; border-radius: 5px; background-color: antiquewhite; box-shadow: 4px 4px gray">
+              <p>Player re-identification</p>
+              <div><img src="https://arena-data.keemotion.com/tmp/gva/DeepSportRadarReidFigure.png" width="200"></div>
+                <a href="https://github.com/DeepSportRadar/player-reidentification-challenge"><i class="fa fa-github"></i> Challenge toolkit</a><br/>
+                <a href="https://eval.ai/web/challenges/challenge-page/1689"><img src="https://eval.ai/dist/images/evalai-logo-single.png" height="15px" style="padding-bottom: 2px"> Challenge submissions</a><br/>
+              </p>
+              <p style="text-align: center; font-size: small;">Organizer: <a href = "mailto: v.somers@sportradar.com">Vladimir Somers</a></p>
+            </div></td>
+          </tr>
+        </table></div>
+        <!-- <ul>
           <li><a href="https://github.com/DeepSportRadar/ball-3d-localization-challenge">Ball 3D localization</a></li>
           <li><a href="https://github.com/DeepSportRadar/camera-calibration-challenge">Camera calibration</a></li>
           <li><a href="https://github.com/DeepSportRadar/instance-segmentation-challenge">Instance segmentation</a></li>
           <li><a href="https://github.com/DeepSportRadar/player-reidentification-challenge">Player re-identification</a></li>
-        </ul>
+        </ul> -->
         <p style="text-align: justify;">
           The challenges are hosted on <a href="https://eval.ai/">EvalAI</a> where participants will submit
           the predictions of their model. Labels of the evaluation set used to rank the participants will be kept secret and
@@ -101,6 +139,8 @@
         <p style="text-align: justify;">
           The challenges will run in two phases described hereafter.
           Participants are allowed (and encoraged) to submit to both phases, and can compete in the 4 different challenges.
+          Any team of one or multiple members can participate in the challenge but individuals can only belong to one single team per challenge. Challenge organizers cannot participate in their challenge.
+
         </p>
         <h4 class="mt-5"> <img class="mr-4"src="img/triangle.png" width="18" height="18" alt="">First phase - Compete to have your method published in the conference proceedings</h4>
         <p style="text-align: justify;">
@@ -129,17 +169,17 @@
             </tr>
           </tbody>
         </table>
-        <h4 class="mt-5"> <img class="mr-4"src="img/triangle.png" width="18" height="18" alt="">Second phase - Compete to win up to US$1,000.00</h4>
+        <h4 class="mt-5"> <img class="mr-4"src="img/triangle.png" width="18" height="18" alt="">Second phase - Compete to win up to $1,000</h4>
         <p style="text-align: justify;">
-          For each challenge, the team performing best on the leaderboard will be awarded a US$500.00 prize.
-          In addition, a jury prize of US$500.00 per challenge will be awarded to the team proposing the most innovative solution,
+          For each challenge, the team performing best on the leaderboard will be awarded a $500 prize.
+          In addition, a jury prize of $500 per challenge will be awarded to the team proposing the most innovative solution,
           regardless of the performance on the leaderboard.
         </p>
         <p style="text-align: justify;">
           To be eligible, submissions should be acompagnied with a technical report describing the proposed
-          approach and the code to reproduce their results. Reports are to be uploaded within the final submission and must 
-          provide a link to a public repository hosting the code. The reports and the code will be reviewed by
-          the challenge organizers that may disqualify any submission for which legitimity is uncertain.
+          approach and the code to reproduce their results. A link to the report mast be provided in
+          the final submission and the reports must provide a link to a public repository hosting the code.
+          The reports and the code will be reviewed by the challenge organizers that may disqualify any submission for which legitimity is uncertain.
         </p>
         <p>
           The winners will be announced during the workshop and will have their technical report published on the challenge website.
