@@ -1,5 +1,24 @@
 <!doctype html>
 <html class="h-100" lang="en">
+<style>
+    .flex-container{
+        width: 100%;
+        min-height: 100px;
+        margin: 0 auto;
+        display: -webkit-flex; /* Safari */     
+        display: flex; /* Standard syntax */
+    }
+    .flex-container .column{
+        padding: 10px;
+        background: #ffffff;
+        -webkit-flex: 1; /* Safari */
+        -ms-flex: 1; /* IE 10 */
+        flex: 1; /* Standard syntax */
+    }
+    .flex-container .column.short{
+        min-height: 30px;
+    }
+</style>
 
 <head>
     <!-- Required meta tags -->
@@ -9,6 +28,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Challenges</title>
 </head>
@@ -71,43 +92,65 @@
         <div class="jumbotron mt-5">
             <h1 class="mt-5">ACM MMSports 2023</h1>
             <h5>6<sup>th</sup> International ACM Workshop on Multimedia Content Analysis in Sports</h5>
-            <p />
+        </p>
 
         </div>
 
         <div class="container">
 
             <h3 class="mt-5">Challenges</h3>
-            <p style="text-align: justify;"> The MMSports 2022 hosted a competition with four challenges dedicated to
+            <p style="text-align: justify;"> The <b>MMSports 2022</b> hosted a competition with four challenges
+                dedicated to <i class="fa fa-github"></i>
                 Basketball named <a
                     href="http://mmsports.multimedia-computing.de/mmsports2022/challenge.html">DeepSportradar 2022</a>.
-                This year, the second edition has a restricted number of challenges:
+                    This year, the second edition has <b>3 challenges</b>: <b>2 on basketball and 1 on
+                    cricket!</b>
             <p style="text-align: justify;">
-            <p><b>Player instance segmentation</p></b> This challenge was the most popular from the first edition
-            with results showing room for improvements. This year we will add a new and more restrictive metrics to
-            better discriminate the results, specifically on occlusions. </p>
-            <p style="text-align: justify;">
-            <p><b>Player Reidentification</p></b> Also this challenge was popular in the last edition. Moreover, our
-            dataset has been listed in the <a href="https://github.com/NEU-Gou/awesome-reid-dataset">Awesome ReID
-                Datasets!</a>. This year, we will add more data on the challenge set! </p>
-            <p style="text-align: justify;">
-            <p><b>Cricket ball release detection</p></b> This challenge meets DeepSportradar objective to become a
-            multisport challenge. Cricket is among the most participated sports in the world: with most participants
-            coming from Australia, India, Pakistan, South Africa and the UK. The International Cricket Council (ICC)
-            identified that an impressive 125 countries around the world play the sport. Hence, this task is highly
-            relevant for the sport analysis domain and for the video understanding domain in general.</p>
-            <p style="text-align: justify;">
-                These three challenges portray the multisport nature of the DeepSportradar competition!</p>
-
-            <p style="text-align: justify;">
-                The challenges are hosted on <a href="https://eval.ai/">EvalAI</a> where participants will submit
+                These 3 challenges portray the <b>multisport</b> nature of the DeepSportradar competition!
+                The challenges are hosted on <a href="https://eval.ai/"><b>EvalAI</b></a> where participants will submit
                 the predictions of their model. Labels of the evaluation set used to rank the participants will be kept
                 secret and leaderboards will display the ranking for each challenge.
             </p>
-
+            <div class="flex-container">
+                <div class="column">
+                    <h4 class="mt-5">Basketball Player Instance Segmentation</h4>
+                    <p style="text-align: justify;">
+                    This challenge was the most popular from the first edition with results showing still room for improvements.
+                    This year we will add a <b>new and more restrictive metrics</b> to better discriminate the results, specifically on occlusions! 
+                    </p>
+                    
+                </div>
+                <div class="column"> 
+                    <h4 class="mt-5">Basketball Player Reidentification</h4>
+                    <p style="text-align: justify;">
+                    Also this challenge was popular in the last edition. Moreover, our dataset has been listed in the <a
+                        href="https://github.com/NEU-Gou/awesome-reid-dataset"><b>Awesome ReID Datasets</b></a>! This year, we
+                    will add <b>more data</b> on the challenge set! </p>
+                    
+                </div>
+                <div class="column">
+                    <h4 class="mt-5">Cricket Ball Release Detection</h4>
+                    <p style="text-align: justify;">
+                    This challenge meets DeepSportradar objective to become a
+                    <b>multisport challenge</b>! Cricket is among the most participated sports in the world: Australia, India, Pakistan, South Africa and the UK!
+                    The International Cricket Council (ICC) identified this sport is played by an impressive 125 countries around the world.</p>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="column">
+                    <i class="fa fa-github"></i>&nbsp&nbsp<a href="https://github.com/DeepSportRadar/instance-segmentation-challenge">Challenge toolkit</a><br/>
+                </div>
+                <div class="column">
+                    <i class="fa fa-github"></i>&nbsp&nbsp<a href="https://github.com/DeepSportRadar/player-reidentification-challenge">Challenge toolkit</a><br/>
+                </div>
+                <div class="column">
+                    <i class="fa fa-github"></i>&nbsp&nbsp<a href="https://github.com/DeepSportRadar/">Challenge toolkit TBA</a><br/>
+                </div>
+            </div>
             <h3 class="mt-5">Datasets</h3>
             <p style="text-align: justify;">
-                Each challenge is based on a dataset of manually annotated images made publicly available by Sportradar.
+                Each challenge is based on a dataset of manually annotated images made publicly available by <a
+                    href="https://sportradar.com/"><b>Sportradar</b></a> .
                 The proposed solutions must not use any other data than the data specifically given in the challenge
                 toolkit.
                 However, for neural network solutions, using a pretrained model from a well known model-zoo and trained
@@ -121,10 +164,10 @@
             <p style="text-align: justify;">
                 The challenges will run in two phases described hereafter.
                 Participants are allowed (and encoraged) to submit to both phases, and can compete in the three
-                different challenges.
+                different challenges. Note that <b>this year <a href="https://eval.ai/"><b>EvalAI</b></a> will only display one single phase!</b>
+                The first phase will be announced to the participants based on the status of the leaderboard at the end of the first phase.
                 Any team of one or multiple members can participate in the challenge but individuals can only belong to
-                one single
-                team per challenge. Challenge organizers cannot participate in their challenge.
+                one single team per challenge. Challenge organizers cannot participate in their challenge.
             </p>
             <h3 class="mt-5">First phase -
                 Compete to have your method published in the conference proceedings</h3>
